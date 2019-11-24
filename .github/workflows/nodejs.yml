@@ -18,8 +18,8 @@ jobs:
     - run: npm run build
     - name: git sync
       run: 
-        git branch master
-        git checkout -b master
-        git add docs/.vuepress/dist/*
-        git commit "updated"
+        git branch master |
+        git checkout -b master |
+        git add docs/.vuepress/dist/* |
+        git commit "updated" |
         git push -u origin master
