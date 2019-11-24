@@ -13,7 +13,7 @@ jobs:
     runs-on: [ubuntu-18.04]
 
     steps:
-    - uses: actions/checkout@src
+    - uses: actions/checkout@v1
     - run: npm ci
     - run: npm run build
     - name: git sync
