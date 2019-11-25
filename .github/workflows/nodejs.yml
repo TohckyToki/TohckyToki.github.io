@@ -24,7 +24,7 @@ jobs:
         git stash pop
     - name: Correct directory
       run: 
-        Get-ChildItem -Path "docs/.vuepress/dist" -Recurse -File | ForEach-Object -Process { Move-Item $_  ("./" + [regex]::Replace($_.FullName, ".*dist/", "")) -Force };
+        Get-ChildItem -Path "docs/.vuepress/dist" -Recurse -File | ForEach-Object -Process { Move-Item $_  ("./" + [regex]::Replace($_.FullName, "^.*dist/", "")) -Force };
         Remove-Item -Path "docs" -Recurse -Force;
       shell: pwsh
     - name: Config & Commit
