@@ -48,7 +48,7 @@ module.exports = {
               path: '/blog/other/',
             },
           ],
-        }
+        },
       }
     }
 
