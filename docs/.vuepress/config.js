@@ -1,6 +1,4 @@
 module.exports = {
-  temp: './docs/.vuepress/tmp/',
-
   locales: {
     '/': {
       lang: 'zh-CN',
