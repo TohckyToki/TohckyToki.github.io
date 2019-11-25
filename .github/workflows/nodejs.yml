@@ -20,7 +20,13 @@ jobs:
       run: 
         git add -- docs/.vuepress/dist/* &&
         git stash push  &&
-        git checkout master  &&
+        git checkout master
+    - name: Delete All
+      run: Remove-Item -Path "./" -Recurse -Force;
+      shell: pwsh
+    - name: Restore nojekyll
+      run: 
+        git checkout -q -- .nojekyll  &&
         git stash pop
     - name: Correct directory
       run: 
