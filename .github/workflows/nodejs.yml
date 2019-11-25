@@ -5,7 +5,7 @@ on:
     branches: 
       - src
     paths: 
-      - 'docs/*'
+      - 'docs/**'
 
 jobs:
   build:
