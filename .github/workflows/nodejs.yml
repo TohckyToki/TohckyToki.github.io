@@ -10,26 +10,31 @@ on:
 jobs:
   build:
 
-    runs-on: [ubuntu-18.04]
+    runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@master
     - run: npm ci
     - run: npm run build
-    - name: Move dist to master
+    - name: Change to master
       run: 
         git add -- docs/.vuepress/dist/* &&
         git stash push  &&
         git checkout master  &&
         git stash pop
-    - name: Move dist to correct directory
+    - name: Correct directory
       run: 
         Get-ChildItem -Path "docs/.vuepress/dist" -Recurse -File | ForEach-Object -Process { Move-Item $_  ("./" + [regex]::Replace($_.FullName, ".*dist/", "")) -Force };
         Remove-Item -Path "docs" -Recurse -Force;
       shell: pwsh
-    - name: Push to master
+    - name: Config & Commit
       run:
+        git config --local user.email "action@github.com" &&
+        git config --local user.name "GitHub Action" &&
         git add -- ./ &&
         git commit -m Updated &&
-        git pull &&
-        git push
+        git pull
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
