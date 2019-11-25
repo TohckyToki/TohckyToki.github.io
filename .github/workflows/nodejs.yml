@@ -16,10 +16,20 @@ jobs:
     - uses: actions/checkout@v1
     - run: npm ci
     - run: npm run build
-    - name: git sync
+    - name: Move dist to master
       run: 
-        git branch master &&
-        git checkout -b master  &&
-        git add docs/.vuepress/dist/*  &&
-        git commit "updated"  &&
-        git push -u origin master
+        git add -- docs/.vuepress/dist/* &&
+        git stash push  &&
+        git checkout master  &&
+        git stash pop
+    - name: Move dist to correct directory
+      run: 
+        Get-ChildItem -Path "docs/.vuepress/dist" -Recurse -File | ForEach-Object -Process { Move-Item $_  (".\\" + [regex]::Replace($_.FullName, ".*dist\\", "")) -Force };
+        Remove-Item -Path "docs" -Recurse -Force;
+      shell: pwsh
+    - name: Push to master
+      run:
+        git add -- ./ &&
+        git commit -m Updated &&
+        git pull &&
+        git push
