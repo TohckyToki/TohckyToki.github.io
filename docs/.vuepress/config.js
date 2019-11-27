@@ -1,4 +1,6 @@
 module.exports = {
+  plugins: ['@vuepress/back-to-top'],
+
   locales: {
     '/': {
       lang: 'zh-CN',
@@ -10,7 +12,7 @@ module.exports = {
   themeConfig: {
     logo: '/logo.ico',
     smoothScroll: true,
-    
+
     locales: {
       '/': {
         lastUpdated: '最终更新：',
