@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "dev": "node ./builds/addMarkdown.js && vuepress dev docs",
+    "build": "node ./builds/addMarkdown.js && vuepress build docs && node ./builds/delMarkdown.js"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.2.0",
