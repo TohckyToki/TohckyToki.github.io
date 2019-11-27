@@ -13,6 +13,8 @@ module.exports = {
     
     locales: {
       '/': {
+        lastUpdated: '最终更新：',
+
         nav: [
           { text: '文章', link: '/blog/' },
           { text: 'Github', link: 'https://github.com/TohckyToki/TohckyToki.github.io' },
