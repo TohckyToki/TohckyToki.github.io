@@ -9,7 +9,8 @@ module.exports = {
 
   themeConfig: {
     logo: '/logo.ico',
-
+    smoothScroll: true,
+    
     locales: {
       '/': {
         nav: [
@@ -34,7 +35,7 @@ module.exports = {
               path: '/blog/',
             },
             {
-              title: 'GitHub Pages的搭建',
+              title: '使用GtiHubPages搭建个人博客',
               path: '000001.html',
             },
           ],
@@ -52,6 +53,10 @@ module.exports = {
       }
     }
 
+  },
+
+  markdown: {
+    lineNumbers: true
   }
 
 }
