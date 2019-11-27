@@ -23,8 +23,8 @@ jobs:
         git checkout master
     - name: Delete All
       run: 
-        Get-ChildItem -Path "./" -Recurse -Directory | ForEach-Object -Process { Remove-Item -Path $_ -Recurse -Force };
-        Get-ChildItem -Path "./" -Recurse -File | ForEach-Object -Process { Remove-Item -Path $_ -Force };
+        Get-ChildItem -Path "./" -Recurse -Directory | ForEach-Object -Process { Remove-Item -Path $_.FullName -Recurse -Force };
+        Get-ChildItem -Path "./" -Recurse -File | ForEach-Object -Process { Remove-Item -Path $_.FullName -Force };
       shell: pwsh
     - name: Restore nojekyll
       run: 
@@ -33,7 +33,7 @@ jobs:
     - name: Correct directory
       run: 
         Get-ChildItem -Path "docs/.vuepress/dist" -Recurse -Directory | ForEach-Object -Process { $Path = (".\\" + [regex]::Replace($_.FullName, "^.*dist\\", "")); if(!(Test-Path $Path)) { New-Item -Path $Path -ItemType Directory -Force }};
-        Get-ChildItem -Path "docs/.vuepress/dist" -Recurse -File | ForEach-Object -Process { Move-Item $_  ("./" + [regex]::Replace($_.FullName, "^.*dist/", "")) -Force };
+        Get-ChildItem -Path "docs/.vuepress/dist" -Recurse -File | ForEach-Object -Process { Move-Item $_.FullName  ("./" + [regex]::Replace($_.FullName, "^.*dist/", "")) -Force };
         Remove-Item -Path "docs" -Recurse -Force;
       shell: pwsh
     - name: Config & Commit
