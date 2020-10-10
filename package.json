@@ -4,10 +4,10 @@
     "build": "node ./builds/addMarkdown.js && vuepress build docs && node ./builds/delMarkdown.js"
   },
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.2.0",
-    "vuepress": "^1.2.0"
+    "@vuepress/plugin-back-to-top": "^1.6.0",
+    "vuepress": "^1.6.0"
   },
   "dependencies": {
-    "gitalk": "^1.5.0"
+    "gitalk": "^1.6.2"
   }
 }
