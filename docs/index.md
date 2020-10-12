@@ -1,5 +1,6 @@
 ---
 title: '主页'
+test: 'node-ci-test'
 ---
 
 ## 欢迎来到我的个人博客
