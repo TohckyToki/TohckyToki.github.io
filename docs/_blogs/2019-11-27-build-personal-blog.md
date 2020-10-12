@@ -1,6 +1,11 @@
 ---
 title: 使用GtiHub Pages搭建个人博客
-prev: false
+date: 2019-11-27
+author: TohckyToki
+location: HangZhou
+tags:
+  - VuePress
+  - Github Pages
 ---
 ## 写在前面
 首先，本文是在通过其他博客的文章进行搭建实践，过程中总结出来的经验。
