@@ -93,6 +93,7 @@ jobs:
       run: 
         git add -- docs/.vuepress/dist/* &&
         git stash push  &&
+        git fetch &&
         git checkout master
     - name: Delete All
       run: 

@@ -39,6 +39,12 @@ module.exports = {
       },
     ],
 
+    globalPagination: {
+      prevText:'上一頁', // Text for previous links.
+      nextText:'下一頁', // Text for next links.
+      layout:'Pagination', // Layout for pagination page
+    },
+
     footer: {
       contact: [
         {
@@ -54,7 +60,7 @@ module.exports = {
       copyright: [
         {
           text: 'Copyright © 2019 YuengFu | Built using VuePress',
-          link: '',
+          link: '/',
         },
       ],
     },
