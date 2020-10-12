@@ -20,7 +20,8 @@ jobs:
       run: 
         git add -- docs/.vuepress/dist/* &&
         git stash push  &&
-        git checkout origin/master
+        git fetch &&
+        git checkout master
     - name: Delete All
       run: 
         Get-ChildItem -Path "./" -Recurse -Directory | ForEach-Object -Process { Remove-Item -Path $_.FullName -Recurse -Force };
