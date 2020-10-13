@@ -41,7 +41,17 @@ module.exports = {
         dirname: '_blogs',
         path: '/blogs/',
         title: '博客',
-        itemPermalink: '/blog/:year/:month/:day/:slug',
+        itemPermalink: '/blogs/:year/:month/:day/:slug',
+        pagination: {
+          lengthPerPage: 10,
+        },
+      },
+      {
+        id: 'tools',
+        dirname: '_tools',
+        path: '/tools/',
+        title: '工具',
+        itemPermalink: '/tools/:year/:month/:day/:slug',
         pagination: {
           lengthPerPage: 10,
         },
@@ -52,6 +62,10 @@ module.exports = {
       {
         text: '博客',
         link: '/blogs/',
+      },
+      {
+        text: '工具',
+        link: '/tools/',
       },
       {
         text: '标签',
