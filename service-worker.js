@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "24e951c19a8458f0bae53d06a757dce2"
+    "revision": "faf3cf7fa4e5d6f178e21ff4fac6dbae"
   },
   {
-    "url": "assets/css/0.styles.6ea7dd23.css",
-    "revision": "8048e2f957419b044635ff266fcd5151"
+    "url": "assets/css/0.styles.3bea85bd.css",
+    "revision": "a9d19b81e721bf412b908c520a62d16e"
   },
   {
     "url": "assets/fonts/EJRVQgYoZZY2vCFuvAFbzr-_dSb_nco.9738e026.woff2",
@@ -82,8 +82,8 @@ self.__precacheManifest = [
     "revision": "d849895b3173b1ea49ca88d06e6bc9ba"
   },
   {
-    "url": "assets/js/5.3fdee170.js",
-    "revision": "9348564a3b3a8ada0640eafd5cb3fbff"
+    "url": "assets/js/5.96124381.js",
+    "revision": "e0295b4c471a209b6b6b6f9919082da8"
   },
   {
     "url": "assets/js/6.44673a8a.js",
@@ -102,8 +102,8 @@ self.__precacheManifest = [
     "revision": "f0b185af00f7f9cfe4ab621b2ebb25ae"
   },
   {
-    "url": "assets/js/app.832019cc.js",
-    "revision": "34535715cbb0cafcf497f121dc78d680"
+    "url": "assets/js/app.3c06a796.js",
+    "revision": "17b4d198fa8e8d27a969d8eb9479e462"
   },
   {
     "url": "assets/js/vuejs-paginate.d1569ec8.js",
@@ -111,27 +111,27 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/2019/11/27/build-personal-blog/index.html",
-    "revision": "ab87a789c24251c4b3e9154b25600a1c"
+    "revision": "fca8f4a47c994f31529b0e0787a379a1"
   },
   {
     "url": "blogs/index.html",
-    "revision": "07322166d738077bac6f367448adc361"
+    "revision": "d65bd58facde2b27315c4f613e974cc6"
   },
   {
     "url": "index.html",
-    "revision": "39e673994a8473c507d9fbd70b691a0b"
+    "revision": "8d793682c15518745e34361fe6d60d49"
   },
   {
     "url": "tag/Github Pages/index.html",
-    "revision": "717fc7c77fc19d6892ecc86bec34b3e7"
+    "revision": "44dd6382bbde39067bf61d7b0c7c1e76"
   },
   {
     "url": "tag/index.html",
-    "revision": "d548cc9a07601a91aacbedf4e3ecc157"
+    "revision": "5254a4934eeb5ff0186921ab779e37e8"
   },
   {
     "url": "tag/VuePress/index.html",
-    "revision": "a6d0cf25b6d2ccde3a01c97ee1634908"
+    "revision": "9fb13a45ccf4d1fd693f20b9c754456d"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
