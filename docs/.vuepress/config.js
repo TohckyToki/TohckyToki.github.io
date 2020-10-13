@@ -71,6 +71,10 @@ module.exports = {
         text: '标签',
         link: '/tag/',
       },
+      {
+        text: 'GitHub',
+        link: 'https://github.com/TohckyToki/TohckyToki.github.io',
+      },
     ],
 
     globalPagination: {
@@ -83,7 +87,7 @@ module.exports = {
       contact: [
         {
           type: 'github',
-          link: 'https://github.com/TohckyToki/TohckyToki.github.io',
+          link: 'https://github.com/TohckyToki',
         },
         {
           type: 'mail',
