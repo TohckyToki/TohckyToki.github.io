@@ -16,6 +16,8 @@ title: '主页'
 </div>
 
 <style scope lang="stylus">
+$startButtonColor = lightgray
+
 .start-button
   margin-top: 30px;
   > a
@@ -25,6 +27,11 @@ title: '主页'
     padding: 10px;
     border-radius: 10px;
     outline: none;
-    border-color: lightgray;
-    color: lightgray;
+    border-color: $startButtonColor;
+    color: $startButtonColor;
+    text-decoration: blink;
+    &:hover
+      border-color: $accentColor;
+      color: $accentColor;
+      text-decoration: blink !important;
 </style>

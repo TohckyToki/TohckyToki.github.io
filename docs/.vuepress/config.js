@@ -1,5 +1,8 @@
 module.exports = {
-  plugins: ['@vuepress/back-to-top'],
+  plugins: [
+    '@vuepress/back-to-top',
+    '@vuepress/pwa'
+  ],
 
   title: 'YohnV',
   description: 'YohnV的个人博客',
@@ -40,8 +43,8 @@ module.exports = {
     ],
 
     globalPagination: {
-      prevText:'上一頁', // Text for previous links.
-      nextText:'下一頁', // Text for next links.
+      prevText:'<', // Text for previous links.
+      nextText:'>', // Text for next links.
       layout:'Pagination', // Layout for pagination page
     },
 
