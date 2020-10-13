@@ -14,8 +14,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-    - run: npm ci
-    - run: npm run build
+    - run: yarn
+    - run: yarn build
     - name: Change to master
       run: 
         git add -- docs/.vuepress/dist/* &&
