@@ -13,8 +13,8 @@ module.exports = {
     ]
   ],
 
-  title: 'YohnV',
-  description: 'YohnV的个人博客',
+  title: 'TohckyToki',
+  description: 'TohckyToki的个人博客',
 
   head: [
     ['link', { rel: 'icon', href: '/logo.ico' }],
@@ -91,13 +91,13 @@ module.exports = {
         },
         {
           type: 'mail',
-          link: 'mailto:yuengfu.v@outlook.com',
+          link: 'mailto:Tohcky@outlook.com',
         }
       ],
 
       copyright: [
         {
-          text: 'Copyright © 2019 YuengFu | Built using VuePress',
+          text: 'Copyright © 2019 TohckyToki | Built using VuePress',
           link: '/',
         },
       ],
