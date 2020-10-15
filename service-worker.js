@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "9f7902535cb25abc4bd35b09174c308b"
+    "revision": "1e3b52c5d9f167c23b32aee13e16f970"
   },
   {
     "url": "assets/css/0.styles.25b6214f.css",
@@ -94,12 +94,12 @@ self.__precacheManifest = [
     "revision": "3163464f989390d9de75c00519d328e2"
   },
   {
-    "url": "assets/js/12.5719c9f1.js",
-    "revision": "7495380923e13a18070642a73b5fd072"
+    "url": "assets/js/12.87f4aa1f.js",
+    "revision": "fa1551a52a9d9d36ec48bebd51ea0e78"
   },
   {
-    "url": "assets/js/13.96771ca0.js",
-    "revision": "cd4dcf993ad317e83655494cc3b30d0e"
+    "url": "assets/js/13.ff58fba8.js",
+    "revision": "93df2cc6916048d12e8edd198b51032b"
   },
   {
     "url": "assets/js/14.471b2f74.js",
@@ -114,8 +114,8 @@ self.__precacheManifest = [
     "revision": "6107e23fafb91d95796fbb92a36724fa"
   },
   {
-    "url": "assets/js/17.36ae7156.js",
-    "revision": "7ddec197ded1b7b628156dea1e7f98c5"
+    "url": "assets/js/17.1635ac0f.js",
+    "revision": "9403524ec6863fefa4b601def2c7bfb8"
   },
   {
     "url": "assets/js/18.91d5400a.js",
@@ -134,8 +134,8 @@ self.__precacheManifest = [
     "revision": "454c9e72a303f3efe9000362cd811fbe"
   },
   {
-    "url": "assets/js/6.ee214829.js",
-    "revision": "4158c8c9ec839b33960eebe9ece1ad31"
+    "url": "assets/js/6.b70c1ebb.js",
+    "revision": "4c092e5db744c2ad0c8f2d852e204e21"
   },
   {
     "url": "assets/js/7.f4f8006c.js",
@@ -150,8 +150,8 @@ self.__precacheManifest = [
     "revision": "5a998ee39ee4303c57c2ee40f5383352"
   },
   {
-    "url": "assets/js/app.a7096e65.js",
-    "revision": "af4352c6be0c8dc96c33c90945ca5861"
+    "url": "assets/js/app.d774a51a.js",
+    "revision": "c5184d9175712b979d077e56204b890d"
   },
   {
     "url": "assets/js/vuejs-paginate.5c71a65d.js",
@@ -159,39 +159,39 @@ self.__precacheManifest = [
   },
   {
     "url": "blogs/2019/11/27/build-personal-blog/index.html",
-    "revision": "4461ef8ab4e697dc3f814cffbcdad6d7"
+    "revision": "f3f2da6684ddf9c750e7ba090035876b"
   },
   {
     "url": "blogs/index.html",
-    "revision": "d8596fea87a33feee5b59c2b6bbf45fd"
+    "revision": "47341b6ff4dd0c79594abe9dc43d41e7"
   },
   {
     "url": "index.html",
-    "revision": "615a8a0fa985519ec0f56f94e20b2dae"
+    "revision": "d8d8a6f119dfd316a016c738cf6183f7"
   },
   {
     "url": "tag/Github Pages/index.html",
-    "revision": "830caa75a37528a0b4c6cd11d3165751"
+    "revision": "bc1a2e63ebbd50d99d965d1f1b7a37a7"
   },
   {
     "url": "tag/index.html",
-    "revision": "280d19262ea46d006b86e7e274d468e1"
+    "revision": "e08584f6ef2e9b3bc5ceb6a145663c47"
   },
   {
     "url": "tag/Tool/index.html",
-    "revision": "bd932a5b1e389050db6de3b06e1aa654"
+    "revision": "da4d355e4e86c33974523a2a5783f115"
   },
   {
     "url": "tag/VuePress/index.html",
-    "revision": "def96a30e29473eb07ad7e07a5166c80"
+    "revision": "109fa156450830c71e50242d874bad08"
   },
   {
     "url": "tools/2020/10/13/customize-folder-tool/index.html",
-    "revision": "913354a270dd113b625f3aed79183a59"
+    "revision": "1c631276ea90c52f187b9c39cb545f04"
   },
   {
     "url": "tools/index.html",
-    "revision": "9de3871b95971618b84c8c0e64302644"
+    "revision": "fc696f55fadeefc35b863bce8c0ae471"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
