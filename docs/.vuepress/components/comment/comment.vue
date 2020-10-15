@@ -1,6 +1,6 @@
 <template>
   <Vssue
-    :title="IssueTitle"
+    :title="$frontmatter.title"
     :options="options"
   />
 </template>
@@ -29,9 +29,5 @@ export default {
       },
     }
   },
-
-  props: {
-    IssueTitle: String,
-  }
 }
 </script>
