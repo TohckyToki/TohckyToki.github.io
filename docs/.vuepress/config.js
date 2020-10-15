@@ -28,7 +28,7 @@ module.exports = {
     // ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
 
-  theme: '@vuepress/blog',
+  // theme: '@vuepress/blog',
 
   themeConfig: {
     logo: '/logo.ico',
