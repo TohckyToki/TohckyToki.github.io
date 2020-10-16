@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "1e3b52c5d9f167c23b32aee13e16f970"
+    "revision": "7fcdfce6705b55ec5491e4ec2ad6707f"
   },
   {
-    "url": "assets/css/0.styles.25b6214f.css",
-    "revision": "75ad64264cc23eb9881232ff28b20a1f"
+    "url": "assets/css/0.styles.45432bd5.css",
+    "revision": "79516da00e0bfe2c8f825166ce6bdfe9"
   },
   {
     "url": "assets/fonts/EJRVQgYoZZY2vCFuvAFbzr-_dSb_nco.9738e026.woff2",
@@ -94,8 +94,8 @@ self.__precacheManifest = [
     "revision": "3163464f989390d9de75c00519d328e2"
   },
   {
-    "url": "assets/js/12.87f4aa1f.js",
-    "revision": "fa1551a52a9d9d36ec48bebd51ea0e78"
+    "url": "assets/js/12.a371e5b6.js",
+    "revision": "90c67d7fe1690f7d9736112172306189"
   },
   {
     "url": "assets/js/13.ff58fba8.js",
@@ -114,44 +114,48 @@ self.__precacheManifest = [
     "revision": "6107e23fafb91d95796fbb92a36724fa"
   },
   {
-    "url": "assets/js/17.1635ac0f.js",
-    "revision": "9403524ec6863fefa4b601def2c7bfb8"
+    "url": "assets/js/17.afa0ef53.js",
+    "revision": "fb5821a42f505c33a72216e04612d07b"
   },
   {
-    "url": "assets/js/18.91d5400a.js",
-    "revision": "b3739f007261560cf2991b2c39ec1bff"
+    "url": "assets/js/18.073c8b2c.js",
+    "revision": "9903740133ee40e17402593f63dda7d6"
+  },
+  {
+    "url": "assets/js/19.af3e51b3.js",
+    "revision": "fc241c55fce15cad037239c1fb6ed527"
   },
   {
     "url": "assets/js/3.83bc293b.js",
     "revision": "a97c07a5b84ec22d7e40b31a5da12436"
   },
   {
-    "url": "assets/js/4.f77abc39.js",
-    "revision": "bf093ba993cf94249a5f4d1bfdf6c1ec"
+    "url": "assets/js/4.33718ce3.js",
+    "revision": "6f07549e504404c88f42137c5028043b"
   },
   {
-    "url": "assets/js/5.8a11fea5.js",
-    "revision": "454c9e72a303f3efe9000362cd811fbe"
+    "url": "assets/js/5.32716d48.js",
+    "revision": "d520b8b3b8808526a38f6ffaf76d35dd"
   },
   {
-    "url": "assets/js/6.b70c1ebb.js",
-    "revision": "4c092e5db744c2ad0c8f2d852e204e21"
+    "url": "assets/js/6.6a7eca2d.js",
+    "revision": "5ae1f4b05741aedf3bf359f1dea01e51"
   },
   {
-    "url": "assets/js/7.f4f8006c.js",
-    "revision": "869a9e1b3f8c415b9e332fcc86940ad0"
+    "url": "assets/js/7.46354c16.js",
+    "revision": "7a9378b993911026eebdbdc955f7c4f4"
   },
   {
     "url": "assets/js/8.bfcffa64.js",
     "revision": "465fb000fd7244f2173ccdb2035d0ebd"
   },
   {
-    "url": "assets/js/9.1ccc1ec8.js",
-    "revision": "5a998ee39ee4303c57c2ee40f5383352"
+    "url": "assets/js/9.bbe1726b.js",
+    "revision": "3fecd81d8552ca2c8865b9d5c79aa726"
   },
   {
-    "url": "assets/js/app.d774a51a.js",
-    "revision": "c5184d9175712b979d077e56204b890d"
+    "url": "assets/js/app.9a0b93d8.js",
+    "revision": "f74ad1139887f413d8c990cd84f0873b"
   },
   {
     "url": "assets/js/vuejs-paginate.5c71a65d.js",
@@ -159,39 +163,51 @@ self.__precacheManifest = [
   },
   {
     "url": "blogs/2019/11/27/build-personal-blog/index.html",
-    "revision": "f3f2da6684ddf9c750e7ba090035876b"
+    "revision": "b9aaae61280e59c58262087f1170f348"
+  },
+  {
+    "url": "blogs/2020/09/11/use-tensorflow-in-jupyter-notebook/index.html",
+    "revision": "64b1c4df31e477370daa671f6808d6a7"
   },
   {
     "url": "blogs/index.html",
-    "revision": "47341b6ff4dd0c79594abe9dc43d41e7"
+    "revision": "0639e519eb86eea00b224de1f49bdf85"
   },
   {
     "url": "index.html",
-    "revision": "d8d8a6f119dfd316a016c738cf6183f7"
+    "revision": "bc34855ea3450b417ffa14856ddb49fc"
   },
   {
     "url": "tag/Github Pages/index.html",
-    "revision": "bc1a2e63ebbd50d99d965d1f1b7a37a7"
+    "revision": "95a750419933b1221a1007c77848957f"
   },
   {
     "url": "tag/index.html",
-    "revision": "e08584f6ef2e9b3bc5ceb6a145663c47"
+    "revision": "03a953066f5c570bb0cc2996492b8ef6"
+  },
+  {
+    "url": "tag/Jupyter Notebook/index.html",
+    "revision": "8128f247216463ba69443248c68fa9cb"
+  },
+  {
+    "url": "tag/TensorFlow/index.html",
+    "revision": "6bcac9cadbbc739f75d3935f92cc72e5"
   },
   {
     "url": "tag/Tool/index.html",
-    "revision": "da4d355e4e86c33974523a2a5783f115"
+    "revision": "1b6c3adc98d27d14c38c37627b727d76"
   },
   {
     "url": "tag/VuePress/index.html",
-    "revision": "109fa156450830c71e50242d874bad08"
+    "revision": "76839219a4dbb5d1d866c6a8fd10c1bb"
   },
   {
     "url": "tools/2020/10/13/customize-folder-tool/index.html",
-    "revision": "1c631276ea90c52f187b9c39cb545f04"
+    "revision": "e5a9aa85c29906d3d02160a5e9bd22b8"
   },
   {
     "url": "tools/index.html",
-    "revision": "fc696f55fadeefc35b863bce8c0ae471"
+    "revision": "d27a3dfd2d845cb9ce0e5673216fd22b"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
