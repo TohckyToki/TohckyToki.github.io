@@ -13,7 +13,7 @@ module.exports = {
     ]
   ],
 
-  title: 'TohckyToki',
+  title: `TohckyToki's Blog`,
   description: 'TohckyToki的个人博客',
 
   head: [
@@ -27,8 +27,6 @@ module.exports = {
     // ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
     // ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
-
-  // theme: '@vuepress/blog',
 
   themeConfig: {
     logo: '/logo.ico',
@@ -71,10 +69,6 @@ module.exports = {
         text: '标签',
         link: '/tag/',
       },
-      {
-        text: 'GitHub',
-        link: 'https://github.com/TohckyToki/TohckyToki.github.io',
-      },
     ],
 
     globalPagination: {
@@ -97,7 +91,7 @@ module.exports = {
 
       copyright: [
         {
-          text: 'Copyright © 2019 TohckyToki | Built using VuePress',
+          text: 'Copyright © 2019 TohckyToki',
           link: '/',
         },
       ],
