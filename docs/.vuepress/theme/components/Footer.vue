@@ -18,7 +18,7 @@
     <div class="footer-right-wrap">
       <ul v-if="copyright" class="copyright">
         <li v-for="item in copyright" :key="item.text" class="copyright-item">
-          <i>{{ item.text }}</i>
+          <i>{{ item.text }} | Powered by <a href="https://vuepress.vuejs.org/zh/" target="_blank">VuePress</a></i>
         </li>
       </ul>
     </div>

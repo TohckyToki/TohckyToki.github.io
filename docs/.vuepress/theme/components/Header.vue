@@ -3,7 +3,7 @@
     <header id="header">
       <div class="header-wrapper">
         <div class="title">
-          <NavLink link="/" class="home-link">{{ $site.title }}'s Blog </NavLink>
+          <NavLink link="/" class="home-link">{{ $site.title }} </NavLink>
           <ul v-if="$themeConfig.nav" class="nav">
             <li
               v-for="item in $themeConfig.nav"
@@ -53,6 +53,9 @@ export default {
   margin auto
   box-shadow 0 5px 20px rgba(0, 0, 0, 0.03), 0 6px 6px rgba(0, 0, 0, 0.05)
   transition all 1s cubic-bezier(0.25, 0.8, 0.25, 1)
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   ol, ul
     list-style none
@@ -65,12 +68,12 @@ export default {
 // border-bottom 5px solid lighten(#3eaf7c, 50%)
 .header-wrapper
   display flex
-  line-height 40px
-  height 40px
+  line-height ($headerHeight / 2)
+  height ($headerHeight / 2)
 
   .title
     /* flex 0 0 200px */
-    font-size 30px
+    font-size 24px
     margin 0
     letter-spacing 2px
     display flex
