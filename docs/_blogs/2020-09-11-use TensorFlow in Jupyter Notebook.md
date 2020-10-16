@@ -1,5 +1,5 @@
 ---
-title: 在Jyupyter Notebook中使用TensorFlow
+title: 在Jupyter Notebook中使用TensorFlow
 date: 2020-09-11
 author: TohckyToki
 location: HangZhou
@@ -7,7 +7,7 @@ tags:
   - Jupyter Notebook
   - TensorFlow
 ---
-## Jyupyter Notebook的环境配置
+## Jupyter Notebook的环境配置
 
 首先需要下载安装[Anaconda](https://www.anaconda.com/products/individual)
 
