@@ -1,0 +1,27 @@
+@require './navlink.styl'
+
+@media (min-width: 1200px)
+  .vuepress-toc
+    display block !important
+  .side-nav
+    margin-left 0
+  .footer
+    margin-left 200px
+
+@media (max-width: 1000px)
+  .footer
+    margin-left 0 !important
+
+.go-to-top
+  bottom 6rem !important
+
+.side-nav.manual
+  &.open
+    margin-left 0
+    +.footer
+      margin-left 200px
+  &.close
+    margin-left -200px
+    +.footer
+      margin-left 0
+  

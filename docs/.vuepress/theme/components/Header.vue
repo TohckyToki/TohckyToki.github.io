@@ -29,12 +29,6 @@ import Feed from '@parent-theme/components/Feed'
 
 export default {
   components: { SearchBox, Feed },
-
-  mounted() {
-    this.$router.afterEach(()=>{
-      console.info(this.$frontmatter)
-    })
-  }
 }
 </script>
 
@@ -117,7 +111,7 @@ export default {
         transition all 0.5s
         border 1px solid #cecece
 
-        &:hover
+        &:hover, &:focus
           border 1px solid $accentColor
           box-shadow 0 0 5px $accentColor
 

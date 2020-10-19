@@ -1,0 +1,19 @@
+.nav
+  .nav-link
+    position relative
+    color $textColor
+    &::before
+      content ''
+      position absolute
+      bottom -14px
+      left 0
+      width 0
+      height 3px
+      background $navLinkColor
+      transition:width 500ms
+
+  .nav-link
+    &:hover, &.router-link-active
+      color $navLinkColor
+      &::before
+        width 100%

@@ -138,6 +138,7 @@ ol, ul
   background-color $footerBgColor
   display flex
   padding 15px 32px
+  transition margin-left 500ms ease-in
 
   .footer-left-wrap
     line-height 30px
