@@ -17,7 +17,7 @@ module.exports = {
   description: 'TohckyToki的个人博客',
 
   head: [
-    ['link', { rel: 'icon', href: '/logo.ico' }],
+    ['link', { rel: 'icon', href: '/logo.png' }],
     // ['link', { rel: 'manifest', href: '/manifest.json' }],
     // ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     // ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
@@ -64,10 +64,6 @@ module.exports = {
       {
         text: '工具',
         link: '/tools/',
-      },
-      {
-        text: '标签',
-        link: '/tag/',
       },
     ],
 
