@@ -136,8 +136,6 @@ export default {
     ).length;
 
     this.tagCount = this.$tag.length;
-
-    window.vueObject = this;
   },
 
   computed: {
