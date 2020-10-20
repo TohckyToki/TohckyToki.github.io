@@ -15,7 +15,7 @@ export default {
   data: function () {
     return {
       sideNavClass: "",
-      isOpen: window.innerWidth > 1200 ? true : false,
+      isOpen: false,
 
       blogPageCount: 0,
       tagCount: 0
@@ -28,6 +28,7 @@ export default {
     },
   },
   mounted() {
+    this.isOpen = window.innerWidth > 1200 ? true : false;
     window.onresize = () => {
       if (this.sideNavClass == "") {
         this.isOpen = window.innerWidth > 1200 ? true : false;
@@ -35,12 +36,8 @@ export default {
         this.sideNavClass = "";
       }
     };
-    window.vueObject = this;
-    window.$frontmatterKey = this.$frontmatterKey
 
     this.blogPageCount = this.$site.pages.filter(e=>e.relativePath && e.relativePath !== 'index.md').length
-    console.log(this.blogPageCount)
-
   },
 };
 </script>
