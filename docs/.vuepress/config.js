@@ -29,7 +29,7 @@ module.exports = {
   ],
 
   themeConfig: {
-    logo: '/logo.ico',
+    profile: '/logo.png',
     smoothScroll: true,
     dateFormat: 'YYYY-MM-DD',
 
@@ -73,7 +73,7 @@ module.exports = {
       layout: 'Pagination', // Layout for pagination page
     },
 
-    footer: {
+    sideNav: {
       contact: [
         {
           type: 'github',
@@ -82,9 +82,11 @@ module.exports = {
         {
           type: 'mail',
           link: 'mailto:Tohcky@outlook.com',
-        }
+        },
       ],
+    },
 
+    footer: {
       copyright: [
         {
           text: 'Copyright © 2019 TohckyToki',
