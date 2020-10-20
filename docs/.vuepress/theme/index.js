@@ -1,4 +1,4 @@
-module.exports =() => {
+module.exports =(options, ctx) => {
   return {
     extend: '@vuepress/blog',
 
@@ -7,5 +7,15 @@ module.exports =() => {
         pageCtx.frontmatter.lang = 'zh-CN'
       }
     },
+
+    additionalPages: [
+      {
+         path: '/timeline/',
+         frontmatter: {
+            layout: 'TimeLine'
+         }
+      }
+    ],
+
   }
 }
