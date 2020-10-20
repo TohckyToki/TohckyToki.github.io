@@ -147,6 +147,21 @@ export default {
       );
       this.currentCount += perPageCount;
     }
+
+    // window.vueObject = this;
+    // this.addPages();
+
+    // window.onscroll = () => {
+    //   const dom = window.document.body;
+    //   const scrollDistance =
+    //     dom.scrollHeight - dom.scrollTop - dom.clientHeight;
+    //   console.log(dom.scrollHeight);
+    //   console.log(dom.scrollTop);
+    //   console.log(dom.clientHeight);
+    //   if (scrollDistance <= 0) {
+    //     this.addPages();
+    //   }
+    // };
   },
 
   methods: {
@@ -159,6 +174,28 @@ export default {
       });
       return groups;
     },
+    // addPages() {
+    //   const perPageCount = 10;
+
+    //   if (this.allblog && this.allblog.length > this.currentCount) {
+    //     let pages = this.allblog.slice(
+    //       this.currentCount,
+    //       this.currentCount + perPageCount
+    //     );
+    //     this.nodes = this.nodes || {};
+    //     Object.assign(
+    //       this.nodes,
+    //       this.groupBy(
+    //         pages,
+    //         (e) =>
+    //           `${e.date.getFullYear()}-${(e.date.getMonth() + 1)
+    //             .toString()
+    //             .padStart(2, "0")}`
+    //       )
+    //     );
+    //     this.currentCount += perPageCount;
+    //   }
+    // },
   },
 };
 </script>
