@@ -126,42 +126,17 @@ export default {
   },
 
   mounted() {
-    const perPageCount = 10;
     window.vueObject = this;
+    this.addPages();
 
-    if (this.allblog && this.allblog.length > this.currentCount) {
-      let pages = this.allblog.slice(
-        this.currentCount,
-        this.currentCount + perPageCount
-      );
-      this.nodes = this.nodes || {};
-      Object.assign(
-        this.nodes,
-        this.groupBy(
-          pages,
-          (e) =>
-            `${e.date.getFullYear()}-${(e.date.getMonth() + 1)
-              .toString()
-              .padStart(2, "0")}`
-        )
-      );
-      this.currentCount += perPageCount;
-    }
-
-    // window.vueObject = this;
-    // this.addPages();
-
-    // window.onscroll = () => {
-    //   const dom = window.document.body;
-    //   const scrollDistance =
-    //     dom.scrollHeight - dom.scrollTop - dom.clientHeight;
-    //   console.log(dom.scrollHeight);
-    //   console.log(dom.scrollTop);
-    //   console.log(dom.clientHeight);
-    //   if (scrollDistance <= 0) {
-    //     this.addPages();
-    //   }
-    // };
+    window.onscroll = () => {
+      const dom = window.document.documentElement;
+      const scrollDistance =
+        dom.scrollHeight - dom.scrollTop - dom.clientHeight;
+      if (scrollDistance <= 0) {
+        this.addPages();
+      }
+    };
   },
 
   methods: {
@@ -174,28 +149,32 @@ export default {
       });
       return groups;
     },
-    // addPages() {
-    //   const perPageCount = 10;
+    addPages() {
+      const perPageCount = 10;
 
-    //   if (this.allblog && this.allblog.length > this.currentCount) {
-    //     let pages = this.allblog.slice(
-    //       this.currentCount,
-    //       this.currentCount + perPageCount
-    //     );
-    //     this.nodes = this.nodes || {};
-    //     Object.assign(
-    //       this.nodes,
-    //       this.groupBy(
-    //         pages,
-    //         (e) =>
-    //           `${e.date.getFullYear()}-${(e.date.getMonth() + 1)
-    //             .toString()
-    //             .padStart(2, "0")}`
-    //       )
-    //     );
-    //     this.currentCount += perPageCount;
-    //   }
-    // },
+      if (this.allblog && this.allblog.length > this.currentCount) {
+        let pages = this.allblog.slice(
+          this.currentCount,
+          this.currentCount + perPageCount
+        );
+        this.nodes = Object.assign({}, this.nodes);
+        let group = this.groupBy(
+          pages,
+          (e) =>
+            `${e.date.getFullYear()}-${(e.date.getMonth() + 1)
+              .toString()
+              .padStart(2, "0")}`
+        );
+        for (const key in group) {
+          if (this.nodes.hasOwnProperty(key)) {
+            this.nodes[key] = this.nodes[key].concat(group[key]);
+          } else {
+            this.nodes[key] = group[key];
+          }
+        }
+        this.currentCount += perPageCount;
+      }
+    },
   },
 };
 </script>
